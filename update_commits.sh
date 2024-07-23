@@ -7,7 +7,7 @@ script_dir=$(dirname "$0")
 timestamp=$(date -Iseconds)
 
 # Define the filename with the timestamp
-filename="api_response_$timestamp.txt"
+filename="outputs/api_response_$timestamp.txt"
 
 # Make the API call and save the result to the file in the script's directory
 curl -X GET "https://utkarsh.app/api/update-commits" -o "$script_dir/$filename"
