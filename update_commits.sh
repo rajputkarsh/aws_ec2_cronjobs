@@ -10,4 +10,4 @@ timestamp=$(date -Iseconds)
 filename="outputs/api_response_$timestamp.txt"
 
 # Make the API call and save the result to the file in the script's directory
-curl --location "https://utkarsh.app/api/update-commits" -o "$script_dir/$filename"
+curl -X GET "https://www.utkarshrajput.com/api/update-commits" -o "$script_dir/$filename"
